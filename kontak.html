@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontak - Wandi Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="wandi_header">
+        <h1>Wandi Digital</h1>
+        <p>Jasa Pembuatan Website &amp; Desain Digital</p>
+    </div>
+
+    <div id="wandi_menu">
+        <a href="index.html" class="wandi_menu_link">Beranda</a>
+        <a href="tentang.html" class="wandi_menu_link">Tentang Kami</a>
+        <a href="layanan.html" class="wandi_menu_link">Layanan</a>
+        <a href="portofolio.html" class="wandi_menu_link">Portofolio</a>
+        <a href="tim.html" class="wandi_menu_link">Tim</a>
+        <a href="testimoni.html" class="wandi_menu_link">Testimoni</a>
+        <a href="kontak.html" class="wandi_menu_link wandi_active">Kontak</a>
+    </div>
+
+    <div class="wandi_container">
+        <div class="wandi_box">
+            <h2>Hubungi Kami</h2>
+            <p>Isi formulir di bawah ini untuk mengirim pesan kepada kami.</p>
+
+            <form class="wandi_form" id="wandi_formkontak" onsubmit="wandi_kirimPesan(event)">
+                <label for="wandi_nama">Nama</label>
+                <input type="text" id="wandi_nama" placeholder="Nama lengkap">
+
+                <label for="wandi_email">Email</label>
+                <input type="email" id="wandi_email" placeholder="nama@email.com">
+
+                <label for="wandi_isi">Pesan</label>
+                <textarea id="wandi_isi" rows="5" placeholder="Tulis pesanmu..."></textarea>
+
+                <button type="submit" class="wandi_btn">Kirim Pesan</button>
+                <p id="wandi_status"></p>
+            </form>
+        </div>
+
+        <div class="wandi_box">
+            <h2>Informasi Kontak</h2>
+            <p>Email: halo@wandidigital.example<br>
+                Telepon: 0812-3456-7890<br>
+                Alamat: Tasikmalaya, Jawa Barat</p>
+        </div>
+    </div>
+
+    <div id="wandi_footer">
+        <p>&copy; <span id="wandi_tahun">2026</span> Wandi Digital &mdash; Tasikmalaya, Jawa Barat</p>
+    </div>
+</body>
+
+</html>

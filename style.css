@@ -1,0 +1,201 @@
+/* ===== Dasar ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ===== Header ===== */
+#wandi_header {
+    background-color: #0b2545;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 4px solid #ff7a00;
+}
+
+#wandi_header h1 {
+    margin: 0 0 5px;
+    font-size: 2.2rem;
+}
+
+#wandi_header p {
+    margin: 0;
+    color: #cfd8e3;
+}
+
+/* ===== Menu ===== */
+#wandi_menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
+}
+
+.wandi_menu_link {
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #0b2545;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+}
+
+.wandi_menu_link:hover,
+.wandi_active {
+    color: #ff7a00;
+    border-bottom: 3px solid #ff7a00;
+}
+
+/* ===== Konten ===== */
+.wandi_container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.wandi_box {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.wandi_box h2 {
+    margin-top: 0;
+    color: #0b2545;
+}
+
+/* Hero (halaman utama) */
+.wandi_hero {
+    background-color: #13315c;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.wandi_hero h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.wandi_btn {
+    display: inline-block;
+    background-color: #ff7a00;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.wandi_btn:hover {
+    background-color: #d96500;
+}
+
+/* Kartu (flexbox) */
+.wandi_grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.wandi_card {
+    flex: 1 1 250px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.wandi_card h3 {
+    margin-top: 0;
+    color: #13315c;
+}
+
+.wandi_foto {
+    background-color: #c9d6e4;
+    color: #555555;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.wandi_harga {
+    font-size: 1.5rem;
+    color: #ff7a00;
+    font-weight: bold;
+}
+
+/* ===== Form kontak ===== */
+.wandi_form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+.wandi_form input,
+.wandi_form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.wandi_form button {
+    margin-top: 20px;
+}
+
+#wandi_status {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* ===== Footer ===== */
+#wandi_footer {
+    background-color: #0b2545;
+    color: #cfd8e3;
+    text-align: center;
+    padding: 25px 20px;
+    border-top: 4px solid #ff7a00;
+}
+
+#wandi_footer p {
+    margin: 0;
+}
+
+/* ===== Responsive: layar <= 700px ===== */
+@media screen and (max-width: 700px) {
+    #wandi_menu {
+        flex-direction: column;
+    }
+
+    .wandi_menu_link {
+        text-align: left;
+        padding-left: 25px;
+    }
+
+    #wandi_header h1 {
+        font-size: 1.7rem;
+    }
+
+    .wandi_hero h2 {
+        font-size: 1.5rem;
+    }
+}
